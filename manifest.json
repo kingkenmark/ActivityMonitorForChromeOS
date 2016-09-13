@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Activity Monitor",
+  "version": "1",
+  "description": "Monitor ChromeOS status like active process, active tab,
+  machine idleness, clipboard usage",
+  "permissions": [
+    "processes",
+    "tabs",
+    "idle",
+    "storage"
+  ],
+  "browser_action": {
+      "default_title": "Activity Panel",
+      "default_popup": "panel.html"
+  },
+  "background": {
+    "page" : "background.html"
+  }
+}
